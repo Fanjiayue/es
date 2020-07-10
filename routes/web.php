@@ -37,3 +37,8 @@ Route::get('/te/{type}', function ($type) {
     $re = event(new Register($data));
     var_dump($re);
 });
+
+
+Route::get('/user', function () {
+    return view('welcome');
+});
